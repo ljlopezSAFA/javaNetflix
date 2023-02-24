@@ -5,10 +5,7 @@ import org.junit.jupiter.api.Test;
 import utilidades.UtilidadesNetflix;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -176,8 +173,8 @@ public class UtilidadesNetflixTest {
         temporada1Serie2.setCapitulos(Arrays.asList(capitulo1Temporada1Serie2, capitulo2Temporada1Serie2));
 
         serie1.setTemporadas(Arrays.asList(temporada1Serie1, temporada2Serie1));
-        serie2.setTemporadas(Arrays.asList(temporada1Serie2));
-        serie3.setTemporadas(Arrays.asList(temporada1Serie3));
+        serie2.setTemporadas(Collections.singletonList(temporada1Serie2));
+        serie3.setTemporadas(Collections.singletonList(temporada1Serie3));
 
         // Crear lista de series y añadir las creadas anteriormente
         List<Serie> listaSeries = Arrays.asList(serie1, serie2, serie3);
