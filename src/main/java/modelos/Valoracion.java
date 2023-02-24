@@ -4,7 +4,7 @@ package modelos;
 import lombok.*;
 
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude = {"usuario","pelicula","serie", "capitulo"})
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString

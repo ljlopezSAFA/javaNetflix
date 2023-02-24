@@ -3,7 +3,7 @@ package modelos;
 import lombok.*;
 
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude = {"temporada"})
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString

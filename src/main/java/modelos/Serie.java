@@ -5,7 +5,7 @@ import lombok.*;
 import java.util.List;
 
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude = {"temporadas", "capitulos"})
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString

@@ -3,6 +3,7 @@ package utilidades;
 import modelos.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class UtilidadesNetflix {
 
@@ -21,7 +22,7 @@ public class UtilidadesNetflix {
      * @return
      */
     public static List<Pelicula> getPorGeneroPaisDuracion(List<Pelicula> peliculas, String pais, Genero genero, int duracionMinima){
-        return new ArrayList<>();
+        return  new ArrayList<>();
     }
 
 

@@ -30,7 +30,7 @@ public class UtilidadesNetflixTest {
         peliculas.addAll(List.of(p1,p2,p3,p4));
 
         Usuario u1 = new Usuario();
-        PlanSubscripcion ps1 = new PlanSubscripcion(Tipo.ANUAL, LocalDate.of(2023,1,20), LocalDate.of(2024,2,20),90.0);
+        PlanSubscripcion ps1 = new PlanSubscripcion(Tipo.ANUAL, LocalDate.of(2023,1,20), LocalDate.of(2024,1,20),90.0);
         u1.setPlanSubscripcion(ps1);
         Usuario u2 = new Usuario();
         PlanSubscripcion ps2 = new PlanSubscripcion(Tipo.MENSUAL, LocalDate.of(2023,1,20), LocalDate.of(2024,2,20),90.0);
@@ -80,6 +80,8 @@ public class UtilidadesNetflixTest {
                 new Capitulo("Capítulo 3", temporada, "Sinopsis del Capítulo 3", 3),
                 new Capitulo("Capítulo 4", temporada, "Sinopsis del Capítulo 4", 4)
         ));
+
+        temporada.setCapitulos(capitulos);
 
         //Llamar al método para ordenar los capítulos de la temporada
         List<Capitulo> capitulosOrdenados = UtilidadesNetflix.ordenarCapitulosTemporada(temporada, capitulos);

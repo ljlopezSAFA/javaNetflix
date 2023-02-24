@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude = {"valoraciones", "planSubscripcion"})
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
