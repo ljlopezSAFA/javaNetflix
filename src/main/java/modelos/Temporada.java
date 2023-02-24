@@ -7,7 +7,7 @@ import java.util.List;
 @EqualsAndHashCode(exclude = {"capitulos"})
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString(exclude = {"capitulos"})
 public class Temporada {
     private String titulo;
     private int numTemporada;

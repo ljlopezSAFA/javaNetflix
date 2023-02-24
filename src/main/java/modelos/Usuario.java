@@ -9,7 +9,7 @@ import java.util.List;
 @EqualsAndHashCode(exclude = {"valoraciones", "planSubscripcion"})
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString(exclude = {"valoraciones", "planSubscripcion"})
 public class Usuario {
     private String nombre;
     private String apellidos;

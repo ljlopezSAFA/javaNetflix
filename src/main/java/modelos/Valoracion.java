@@ -7,7 +7,7 @@ import lombok.*;
 @EqualsAndHashCode(exclude = {"usuario","pelicula","serie", "capitulo"})
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString(exclude = {"usuario","pelicula","serie", "capitulo"})
 public class Valoracion {
     private Usuario usuario;
     private Pelicula pelicula;

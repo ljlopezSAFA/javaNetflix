@@ -6,7 +6,7 @@ import lombok.*;
 @EqualsAndHashCode(exclude = {"temporada"})
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString(exclude = {"temporada"})
 public class Capitulo{
     private String titulo;
     private Temporada temporada;

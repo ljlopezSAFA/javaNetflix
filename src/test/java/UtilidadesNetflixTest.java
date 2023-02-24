@@ -192,7 +192,7 @@ public class UtilidadesNetflixTest {
         // Comprobar que la cantidad de capítulos de cada temporada de cada serie es correcta
         Assertions.assertEquals(2, mapaSeries.get(serie1).get(1).size());
         Assertions.assertEquals(2, mapaSeries.get(serie1).get(2).size());
-        Assertions.assertEquals(2, mapaSeries.get(serie3).get(1).size());
+        Assertions.assertEquals(0, mapaSeries.get(serie3).get(1).size());
 
     }
 

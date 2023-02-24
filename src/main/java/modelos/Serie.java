@@ -8,7 +8,7 @@ import java.util.List;
 @EqualsAndHashCode(exclude = {"temporadas", "capitulos"})
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString(exclude = {"temporadas", "capitulos"})
 public class Serie {
     private String titulo;
     private String director;
