@@ -27,7 +27,7 @@ public class UtilidadesNetflixTest {
         peliculas.addAll(List.of(p1,p2,p3,p4));
 
         Usuario u1 = new Usuario();
-        PlanSubscripcion ps1 = new PlanSubscripcion(Tipo.ANUAL, LocalDate.of(2023,1,20), LocalDate.of(2024,1,20),90.0);
+        PlanSubscripcion ps1 = new PlanSubscripcion(Tipo.ANUAL, LocalDate.of(2024,1,20), LocalDate.of(2025,1,20),90.0);
         u1.setPlanSubscripcion(ps1);
         Usuario u2 = new Usuario();
         PlanSubscripcion ps2 = new PlanSubscripcion(Tipo.MENSUAL, LocalDate.of(2023,1,20), LocalDate.of(2024,2,20),90.0);
@@ -36,7 +36,7 @@ public class UtilidadesNetflixTest {
         PlanSubscripcion ps3 = new PlanSubscripcion(Tipo.MENSUAL, LocalDate.of(2022,1,20), LocalDate.of(2022,2,20),90.0);
         u3.setPlanSubscripcion(ps3);
         Usuario u4 = new Usuario();
-        PlanSubscripcion ps4 = new PlanSubscripcion(Tipo.MENSUAL, LocalDate.of(2023,1,27), LocalDate.of(2023,2,27),90.0);
+        PlanSubscripcion ps4 = new PlanSubscripcion(Tipo.MENSUAL, LocalDate.of(2024,1,27), LocalDate.of(2024,2,27),90.0);
         u4.setPlanSubscripcion(ps4);
 
         usuarios.add(u1);
